@@ -1,4 +1,4 @@
-import { Button, IconButton, Stack } from "@mui/material";
+import { Button, ButtonGroup, IconButton, Stack } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 function MuiButton() {
   return (
@@ -55,6 +55,18 @@ function MuiButton() {
           <IconButton color="primary" size="small">
             <SendIcon />
           </IconButton>
+        </Stack>
+        <Stack direction={"row"}>
+          <ButtonGroup
+            color="secondary"
+            size="small"
+            orientation="vertical"
+            variant="contained"
+          >
+            <Button onClick={() => alert("left clicked")}>Left</Button>
+            <Button onClick={() => alert("center clicked")}>Center</Button>
+            <Button onClick={() => alert("right clicked")}>Right</Button>
+          </ButtonGroup>
         </Stack>
       </Stack>
     </div>
