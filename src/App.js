@@ -4,6 +4,7 @@ import "./App.css";
 import MuiTypography from "./components/MuiTypography";
 import { Button, Stack } from "@mui/material";
 import MuiButton from "./components/MuiButton";
+import MuiTextFeild from "./components/MuiTextFeild";
 
 function App() {
   return (
@@ -16,11 +17,15 @@ function App() {
           <Link to="buttonComponent">
             <Button variant="contained">Mui-Button</Button>
           </Link>
+          <Link to="textFieldComponent">
+            <Button variant="contained">Mui-TextFeild</Button>
+          </Link>
         </Stack>
       </nav>
       <Routes>
         <Route path="/" element={<MuiTypography />} />
         <Route path="/buttonComponent" element={<MuiButton />} />
+        <Route path="/textFieldComponent" element={<MuiTextFeild />} />
       </Routes>
     </div>
   );
