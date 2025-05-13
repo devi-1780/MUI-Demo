@@ -8,7 +8,7 @@ import MuiButton from "./components/MuiButton";
 function App() {
   return (
     <div className="App">
-      <nav style={{ marginBottom: "15px" }}>
+      <nav>
         <Stack spacing={4} direction={"row"}>
           <Link to="/">
             <Button variant="contained">Mui-Typography</Button>

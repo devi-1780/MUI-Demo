@@ -1,5 +1,5 @@
-import { Button, Stack } from "@mui/material";
-
+import { Button, IconButton, Stack } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 function MuiButton() {
   return (
     <div>
@@ -39,6 +39,22 @@ function MuiButton() {
           <Button variant="contained" size="large">
             large
           </Button>
+        </Stack>
+        <Stack spacing={2} direction={"row"}>
+          <Button
+            variant="contained"
+            startIcon={<SendIcon />}
+            disableElevation
+            onClick={() => alert("clicked")}
+          >
+            send
+          </Button>
+          <Button variant="contained" endIcon={<SendIcon />} disableRipple>
+            send
+          </Button>
+          <IconButton color="primary" size="small">
+            <SendIcon />
+          </IconButton>
         </Stack>
       </Stack>
     </div>
