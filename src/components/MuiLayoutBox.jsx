@@ -1,14 +1,20 @@
-import { Box } from "@mui/material";
+import { Box, Divider, Stack } from "@mui/material";
 
 function MuiLayoutBox() {
   return (
-    <>
+    <Stack
+      sx={{ border: "1px solid" }}
+      direction={"row"}
+      spacing={2}
+      width={"600px"}
+      divider={<Divider orientation="vertical" flexItem />}
+    >
       <Box
         sx={{
           backgroundColor: "primary.main",
           color: "white",
-          width: "250px",
-          height: "250px",
+          width: "100px",
+          height: "100px",
           padding: "16px",
           "&: hover": {
             backgroundColor: "primary.light",
@@ -19,14 +25,14 @@ function MuiLayoutBox() {
       </Box>
       <Box
         bgcolor={"success.light"}
-        height={"250px"}
-        width={"250px"}
+        height={"100px"}
+        width={"100px"}
         p={"16px"}
         color={"white"}
       >
         Hello world
       </Box>
-    </>
+    </Stack>
   );
 }
 export default MuiLayoutBox;
