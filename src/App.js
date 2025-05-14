@@ -11,6 +11,7 @@ import MuiCheckbox from "./components/MuiCheckbox";
 import MuiSwitch from "./components/MuiSwitch";
 import MuiRating from "./components/MuiRating";
 import MuiAutoComplete from "./components/MuiAutoComplete";
+import MuiLayoutBox from "./components/MuiLayoutBox";
 
 function App() {
   return (
@@ -63,6 +64,11 @@ function App() {
               Mui-AutoComplete
             </Button>
           </Link>
+          <Link to="boxLayoutComponent">
+            <Button variant="contained" size="small">
+              Mui-boxlayout
+            </Button>
+          </Link>
           {/* </ButtonGroup> */}
         </Stack>
       </nav>
@@ -76,6 +82,7 @@ function App() {
         <Route path="/switchComponent" element={<MuiSwitch />} />
         <Route path="/ratingComponent" element={<MuiRating />} />
         <Route path="/autoCompleteComponent" element={<MuiAutoComplete />} />
+        <Route path="/boxLayoutComponent" element={<MuiLayoutBox />} />
       </Routes>
     </div>
   );
