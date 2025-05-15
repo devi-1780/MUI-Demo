@@ -24,6 +24,7 @@ import MuiCard from "./components/MuiCard";
 import MuiAccordion from "./components/MuiAccordion";
 import MuiNavbar from "./components/MuiNavbar";
 import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
+import MuiDrawer from "./components/MuiDrawer";
 
 function App() {
   return (
@@ -241,6 +242,20 @@ function App() {
                 Mui-Breadcrumbs
               </Button>
             </Link>
+            <Link to="drawerComponent">
+              <Button
+                variant="contained"
+                size="small"
+                sx={{
+                  backgroundColor: "white",
+                  color: "black",
+                  fontSize: "10px",
+                  fontWeight: "bold",
+                }}
+              >
+                Mui-Drawer
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
@@ -260,6 +275,7 @@ function App() {
         <Route path="/accordionComponent" element={<MuiAccordion />} />
         <Route path="/navbar" element={<MuiNavbar />} />
         <Route path="/breadcrumbsComponent" element={<MuiBreadcrumbs />} />
+        <Route path="/drawerComponent" element={<MuiDrawer />} />
       </Routes>
     </div>
   );
