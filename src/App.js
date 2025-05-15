@@ -14,6 +14,7 @@ import MuiAutoComplete from "./components/MuiAutoComplete";
 import MuiLayoutBox from "./components/MuiLayoutBox";
 import MuiGrid from "./components/MuiGrid";
 import MuiCard from "./components/MuiCard";
+import MuiAccordion from "./components/MuiAccordion";
 
 function App() {
   return (
@@ -81,6 +82,11 @@ function App() {
               Mui-Card
             </Button>
           </Link>
+          <Link to="accordionComponent">
+            <Button variant="contained" size="small">
+              Mui-Accordion
+            </Button>
+          </Link>
           {/* </ButtonGroup> */}
         </Stack>
       </nav>
@@ -97,6 +103,7 @@ function App() {
         <Route path="/boxLayoutComponent" element={<MuiLayoutBox />} />
         <Route path="/grid" element={<MuiGrid />} />
         <Route path="/cardComponent" element={<MuiCard />} />
+        <Route path="/accordionComponent" element={<MuiAccordion />} />
       </Routes>
     </div>
   );
