@@ -15,7 +15,7 @@ function MuiAccordion() {
   };
 
   return (
-    <div style={{ width: "85%", paddingLeft: "50px" }}>
+    <div style={{ width: "85%", paddingLeft: "50px", paddingTop: "50px" }}>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
