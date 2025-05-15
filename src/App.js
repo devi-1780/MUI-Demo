@@ -13,6 +13,7 @@ import MuiRating from "./components/MuiRating";
 import MuiAutoComplete from "./components/MuiAutoComplete";
 import MuiLayoutBox from "./components/MuiLayoutBox";
 import MuiGrid from "./components/MuiGrid";
+import MuiCard from "./components/MuiCard";
 
 function App() {
   return (
@@ -75,6 +76,11 @@ function App() {
               Mui-Grid
             </Button>
           </Link>
+          <Link to="cardComponent">
+            <Button variant="contained" size="small">
+              Mui-Card
+            </Button>
+          </Link>
           {/* </ButtonGroup> */}
         </Stack>
       </nav>
@@ -90,6 +96,7 @@ function App() {
         <Route path="/autoCompleteComponent" element={<MuiAutoComplete />} />
         <Route path="/boxLayoutComponent" element={<MuiLayoutBox />} />
         <Route path="/grid" element={<MuiGrid />} />
+        <Route path="/cardComponent" element={<MuiCard />} />
       </Routes>
     </div>
   );
