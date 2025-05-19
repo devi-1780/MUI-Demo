@@ -25,14 +25,52 @@ import MuiAccordion from "./components/MuiAccordion";
 import MuiNavbar from "./components/MuiNavbar";
 import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 import MuiDrawer from "./components/MuiDrawer";
+import MuiBottomNavigation from "./components/MuiBottomNavigation";
 
 function App() {
+  const navItems = [
+    { path: "/", label: "Mui-Typography" },
+    { path: "buttonComponent", label: "Mui-Button" },
+    { path: "textFieldComponent", label: "Mui-TextFeild" },
+    { path: "selectComponent", label: "Mui-Select" },
+    { path: "radioComponent", label: "Mui-Radio" },
+    { path: "checkboxComponent", label: "Mui-Checkbox" },
+    { path: "switchComponent", label: "Mui-Switch" },
+    { path: "ratingComponent", label: "Mui-Rating" },
+    { path: "autoCompleteComponent", label: "Mui-AutoComplete" },
+    { path: "boxLayoutComponent", label: "Mui-boxlayout" },
+    { path: "grid", label: "Mui-Grid" },
+    { path: "cardComponent", label: "Mui-Card" },
+    { path: "accordionComponent", label: "Mui-Accordion" },
+    { path: "navbar", label: "Mui-Navbar" },
+    { path: "breadcrumbsComponent", label: "Mui-Breadcrumbs" },
+    { path: "drawerComponent", label: "Mui-Drawer" },
+    { path: "bottomNavigationComponent", label: "Mui-Bottom Navigation" },
+  ];
+
   return (
     <div className="App">
       <AppBar position="static">
         <Toolbar>
           <Box sx={{ display: "flex" }} gap={2}>
-            <Link to="/">
+            {navItems.map((item, index) => (
+              <Link key={index} to={item.path}>
+                <Button
+                  variant="contained"
+                  size="small"
+                  sx={{
+                    backgroundColor: "white",
+                    color: "black",
+                    fontSize: "10px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {item.label}
+                </Button>
+              </Link>
+            ))}
+
+            {/* <Link to="/">
               <Button
                 variant="contained"
                 size="small"
@@ -256,6 +294,20 @@ function App() {
                 Mui-Drawer
               </Button>
             </Link>
+            <Link to="bottomNavigationComponent">
+              <Button
+                variant="contained"
+                size="small"
+                sx={{
+                  backgroundColor: "white",
+                  color: "black",
+                  fontSize: "10px",
+                  fontWeight: "bold",
+                }}
+              >
+                Mui-Bottom Navigation
+              </Button>
+            </Link> */}
           </Box>
         </Toolbar>
       </AppBar>
@@ -276,6 +328,10 @@ function App() {
         <Route path="/navbar" element={<MuiNavbar />} />
         <Route path="/breadcrumbsComponent" element={<MuiBreadcrumbs />} />
         <Route path="/drawerComponent" element={<MuiDrawer />} />
+        <Route
+          path="/bottomNavigationComponent"
+          element={<MuiBottomNavigation />}
+        />
       </Routes>
     </div>
   );

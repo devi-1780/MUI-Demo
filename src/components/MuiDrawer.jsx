@@ -8,8 +8,8 @@ export default function MuiDrawer() {
   }
   return (
     <>
-      <IconButton>
-        <MenuIcon color="inherit" onClick={handleDrawerOpen} />
+      <IconButton color="inherit" edge="start" size="large">
+        <MenuIcon onClick={handleDrawerOpen} />
       </IconButton>
       <Drawer
         anchor="left"
