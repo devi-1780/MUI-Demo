@@ -29,6 +29,7 @@ import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import MuiAvatar from "./components/MuiAvatar";
 import MuiBadge from "./components/MuiBadge";
 import MuiList from "./components/MuiList";
+import MuiChip from "./components/MuiChip";
 
 function App() {
   const navItems = [
@@ -52,6 +53,7 @@ function App() {
     { path: "avatarComponent", label: "Mui-Avatar" },
     { path: "badgeComponent", label: "Mui-Badge" },
     { path: "listComponent", label: "Mui-List" },
+    { path: "chipComponent", label: "Mui-Chip" },
   ];
 
   return (
@@ -103,6 +105,7 @@ function App() {
         <Route path="/avatarComponent" element={<MuiAvatar />} />
         <Route path="/badgeComponent" element={<MuiBadge />} />
         <Route path="/listComponent" element={<MuiList />} />
+        <Route path="/chipComponent" element={<MuiChip />} />
       </Routes>
     </div>
   );
