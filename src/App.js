@@ -32,6 +32,7 @@ import MuiList from "./components/MuiList";
 import MuiChip from "./components/MuiChip";
 import MuiTooltip from "./components/MuiTooltip";
 import MuiTable from "./components/MuiTable";
+import MuiAlert from "./components/MuiAlert";
 
 function App() {
   const navItems = [
@@ -58,6 +59,7 @@ function App() {
     { path: "chipComponent", label: "Mui-Chip" },
     { path: "tooltip", label: "Mui-Tooltip" },
     { path: "table", label: "Mui-Table" },
+    { path: "alertComponent", label: "Mui-Alert" },
   ];
 
   return (
@@ -112,6 +114,7 @@ function App() {
         <Route path="/chipComponent" element={<MuiChip />} />
         <Route path="/tooltip" element={<MuiTooltip />} />
         <Route path="/table" element={<MuiTable />} />
+        <Route path="/alertComponent" element={<MuiAlert />} />
       </Routes>
     </div>
   );
