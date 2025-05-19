@@ -28,6 +28,7 @@ import MuiDrawer from "./components/MuiDrawer";
 import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import MuiAvatar from "./components/MuiAvatar";
 import MuiBadge from "./components/MuiBadge";
+import MuiList from "./components/MuiList";
 
 function App() {
   const navItems = [
@@ -50,6 +51,7 @@ function App() {
     { path: "bottomNavigationComponent", label: "Mui-Bottom Navigation" },
     { path: "avatarComponent", label: "Mui-Avatar" },
     { path: "badgeComponent", label: "Mui-Badge" },
+    { path: "listComponent", label: "Mui-List" },
   ];
 
   return (
@@ -73,248 +75,10 @@ function App() {
                 </Button>
               </Link>
             ))}
-
-            {/* <Link to="/">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Typography
-              </Button>
-            </Link>
-            <Link to="buttonComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Button
-              </Button>
-            </Link>
-            <Link to="textFieldComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-TextFeild
-              </Button>
-            </Link>
-            <Link to="selectComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Select
-              </Button>
-            </Link>
-            <Link to="radioComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Radio
-              </Button>
-            </Link>
-            <Link to="checkboxComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Checkbox
-              </Button>
-            </Link>
-            <Link to="switchComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Switch
-              </Button>
-            </Link>
-            <Link to="ratingComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Rating
-              </Button>
-            </Link>
-            <Link to="autoCompleteComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-AutoComplete
-              </Button>
-            </Link>
-            <Link to="boxLayoutComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-boxlayout
-              </Button>
-            </Link>
-            <Link to="grid">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Grid
-              </Button>
-            </Link>
-            <Link to="cardComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Card
-              </Button>
-            </Link>
-            <Link to="accordionComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Accordion
-              </Button>
-            </Link>
-            <Link to="navbar">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Navbar
-              </Button>
-            </Link>
-            <Link to="breadcrumbsComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Breadcrumbs
-              </Button>
-            </Link>
-            <Link to="drawerComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Drawer
-              </Button>
-            </Link>
-            <Link to="bottomNavigationComponent">
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  backgroundColor: "white",
-                  color: "black",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}
-              >
-                Mui-Bottom Navigation
-              </Button>
-            </Link> */}
           </Box>
         </Toolbar>
       </AppBar>
+
       <Routes>
         <Route path="/" element={<MuiTypography />} />
         <Route path="/buttonComponent" element={<MuiButton />} />
@@ -338,6 +102,7 @@ function App() {
         />
         <Route path="/avatarComponent" element={<MuiAvatar />} />
         <Route path="/badgeComponent" element={<MuiBadge />} />
+        <Route path="/listComponent" element={<MuiList />} />
       </Routes>
     </div>
   );
