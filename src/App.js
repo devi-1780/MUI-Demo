@@ -27,6 +27,7 @@ import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 import MuiDrawer from "./components/MuiDrawer";
 import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import MuiAvatar from "./components/MuiAvatar";
+import MuiBadge from "./components/MuiBadge";
 
 function App() {
   const navItems = [
@@ -48,6 +49,7 @@ function App() {
     { path: "drawerComponent", label: "Mui-Drawer" },
     { path: "bottomNavigationComponent", label: "Mui-Bottom Navigation" },
     { path: "avatarComponent", label: "Mui-Avatar" },
+    { path: "badgeComponent", label: "Mui-Badge" },
   ];
 
   return (
@@ -335,6 +337,7 @@ function App() {
           element={<MuiBottomNavigation />}
         />
         <Route path="/avatarComponent" element={<MuiAvatar />} />
+        <Route path="/badgeComponent" element={<MuiBadge />} />
       </Routes>
     </div>
   );

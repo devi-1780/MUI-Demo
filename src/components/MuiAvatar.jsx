@@ -1,4 +1,4 @@
-import { Avatar, Stack } from "@mui/material";
+import { Avatar, AvatarGroup, Stack } from "@mui/material";
 
 function MuiAvatar() {
   return (
@@ -8,12 +8,14 @@ function MuiAvatar() {
         <Avatar sx={{ bgcolor: "success.light" }}>CK</Avatar>
       </Stack>
       <Stack spacing={1} direction={"row"}>
-        <Avatar sx={{ bgcolor: "primary.light" }}>BW</Avatar>
-        <Avatar sx={{ bgcolor: "success.light" }}>CK</Avatar>
-        <Avatar
-          sx={{ height: 50, width: 50 }}
-          src="https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
-        />
+        <AvatarGroup max={3}>
+          <Avatar sx={{ bgcolor: "primary.light" }}>BW</Avatar>
+          <Avatar sx={{ bgcolor: "success.light" }}>CK</Avatar>
+          <Avatar
+            sx={{ height: 50, width: 50 }}
+            src="https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
+          />
+        </AvatarGroup>
       </Stack>
       <Stack spacing={1} direction={"row"}>
         <Avatar sx={{ bgcolor: "primary.light", width: 50, height: 50 }}>
