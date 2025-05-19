@@ -26,6 +26,7 @@ import MuiNavbar from "./components/MuiNavbar";
 import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 import MuiDrawer from "./components/MuiDrawer";
 import MuiBottomNavigation from "./components/MuiBottomNavigation";
+import MuiAvatar from "./components/MuiAvatar";
 
 function App() {
   const navItems = [
@@ -46,13 +47,14 @@ function App() {
     { path: "breadcrumbsComponent", label: "Mui-Breadcrumbs" },
     { path: "drawerComponent", label: "Mui-Drawer" },
     { path: "bottomNavigationComponent", label: "Mui-Bottom Navigation" },
+    { path: "avatarComponent", label: "Mui-Avatar" },
   ];
 
   return (
     <div className="App">
       <AppBar position="static">
         <Toolbar>
-          <Box sx={{ display: "flex" }} gap={2}>
+          <Box sx={{ display: "flex", flexWrap: "wrap" }} gap={2}>
             {navItems.map((item, index) => (
               <Link key={index} to={item.path}>
                 <Button
@@ -332,6 +334,7 @@ function App() {
           path="/bottomNavigationComponent"
           element={<MuiBottomNavigation />}
         />
+        <Route path="/avatarComponent" element={<MuiAvatar />} />
       </Routes>
     </div>
   );
