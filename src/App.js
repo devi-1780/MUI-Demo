@@ -34,6 +34,7 @@ import MuiTooltip from "./components/MuiTooltip";
 import MuiTable from "./components/MuiTable";
 import MuiAlert from "./components/MuiAlert";
 import MuiDailog from "./components/MuiDailog";
+import MuiProgress from "./components/MuiProgress";
 
 function App() {
   const navItems = [
@@ -62,6 +63,7 @@ function App() {
     { path: "table", label: "Mui-Table" },
     { path: "alertComponent", label: "Mui-Alert" },
     { path: "dialogComponent", label: "Mui-Dialog" },
+    { path: "progressComponent", label: "Mui-Progress" },
   ];
 
   return (
@@ -118,6 +120,7 @@ function App() {
         <Route path="/table" element={<MuiTable />} />
         <Route path="/alertComponent" element={<MuiAlert />} />
         <Route path="/dialogComponent" element={<MuiDailog />} />
+        <Route path="/progressComponent" element={<MuiProgress />} />
       </Routes>
     </div>
   );
